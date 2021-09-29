@@ -14,7 +14,7 @@ repositories {
   mavenCentral()
 }
 
-val vertxVersion = "3.9.9"
+val vertxVersion = "3.8.2"
 val junitJupiterVersion = "5.7.0"
 
 val mainVerticleName = "com.nitrek.feedbackApp.MainVerticle"
@@ -32,6 +32,9 @@ dependencies {
   implementation("io.vertx:vertx-jdbc-client")
   implementation("io.vertx:vertx-config")
   implementation("io.vertx:vertx-web")
+  implementation("io.vertx:vertx-mongo-client:$vertxVersion")
+  implementation("io.vertx:vertx-mysql-postgresql-client:3.8.2")
+  implementation("io.vertx:vertx-rx-java:$vertxVersion")
   testImplementation("io.vertx:vertx-junit5")
   testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
 }

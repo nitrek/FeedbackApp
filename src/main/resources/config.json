@@ -1,0 +1,11 @@
+{
+    "http": {
+        "port": 8090
+    },
+    "db": {
+        "connection_string": "mongodb+srv://setConnectionString",
+        "db_name": "feedbackapp",
+        "useObjectId": true
+    }
+
+}
